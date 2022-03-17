@@ -15,13 +15,12 @@ body{
     font-family: sans-serif;  
     
 }
+
   
 .card {
     align-items: center;
     justify-content: center;
     background-color: #F5F7FA;
-    
-    
 }
 
 .site-header {
@@ -38,12 +37,9 @@ body{
     text-decoration: none;
 }
 
-
-
 .logo{
     width:3em;    
 }
-
 
 @keyframes gradient {
 	0% {
