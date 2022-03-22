@@ -13,7 +13,57 @@
     <!-- Custom styles for this template -->
     <link href="biblioteca/css/recarga-cartucho.css" rel="stylesheet">
 
+    <!-- Event snippet for Obter rota conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10802860365/bmDMCIqO06sDEM2imp8o',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+
+ <!-- Event snippet for Whatsapp conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-10802860365/qKUrCI2O06sDEM2imp8o',
+        'value': 1.0,
+        'currency': 'BRL',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+  
+
+  
   </head>
+  <!-- Global site tag (gtag.js) - Google Ads: 10802860365 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10802860365"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10802860365');
+</script>
+
   <body>
     
 <header class="site-header sticky-top py-1">
@@ -42,11 +92,11 @@
       <p>Já pensou em poder reutilizar eu cartucho diversas vezes antes de precisar adquirir um novo? Nós podemos te ajudar! 
           Clique abaixo agora mesmo e vamos resolver isso logo! Recarregamos seu cartucho na hora!</p>
         <div align="center">
-          <a class="btn btn-danger" id="como-chegar" href="https://bit.ly/3i6SMc9">
+          <a class="btn btn-danger" id="como-chegar" href="https://bit.ly/3i6SMc9" onclick="gtag_report_conversion('https://bit.ly/3i6SMc9')" >
             <img src="biblioteca/bootstrap/icons/icons/maps.svg">
             Como Chegar
           </a>
-          <a class="btn btn-success" id="quero-falar" href="https://bit.ly/37U2xEs">
+          <a class="btn btn-success" id="quero-falar" href="https://bit.ly/37U2xEs" onclick="gtag_report_conversion('https://bit.ly/37U2xEs')" >
             <img src="biblioteca/bootstrap/icons/icons/whatsapp.svg">
             Falar com vocês!
           </a>
